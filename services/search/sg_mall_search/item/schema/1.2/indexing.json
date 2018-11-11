@@ -1,0 +1,1162 @@
+{
+    "$name": "item",
+    "$type": "$indexing",
+    "$fields": {
+        "$key": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$alias": "search_id",
+                "$casesensitive": true
+            }
+        },
+        "shop_id": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "item_id": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "item_variant_id": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "update_time": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "base_sku": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "sku": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "skus": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$2gram"
+                }
+            }
+        },
+        "mall_id": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "shop_url": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "shop_name": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "item_name": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "description": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "tag_line": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "price_min": {
+            "$type": "$double",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$useFieldCache": true
+            }
+        },
+        "price_max": {
+            "$type": "$double",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$useFieldCache": true
+            }
+        },
+        "size": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$casesensitive": true
+            }
+        },
+        "color": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$casesensitive": true
+            }
+        },
+        "variant_names": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "variant_values": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "item_image_url1": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "image_description1": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "item_image_url2": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "image_description2": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "item_image_url3": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "image_description3": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "item_image_url4": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "image_description4": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "item_image_url5": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "image_description5": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "rakuten_product_category_id1": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$useFieldCache": true
+            }
+        },
+        "rakuten_product_category_id2": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$useFieldCache": true
+            }
+        },
+        "rakuten_product_category_id3": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$useFieldCache": true
+            }
+        },
+        "shop_category_ids": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$ws"
+                }
+            }
+        },
+        "brand": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$lang",
+                    "$lang": "ja"
+                },
+                "$ngram": true
+            }
+        },
+        "facet_brand": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$casesensitive": true
+            }
+        },
+        "brand_id": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$useFieldCache": true
+            }
+        },
+        "is_base": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "is_free_shipping": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "is_inventory_exist": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "live_start_time": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "live_end_time": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "searchable_start_time": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "searchable_end_time": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "shop_status": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "is_test": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "campaign_id": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "original_price_max": {
+            "$type": "$double",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "original_price_min": {
+            "$type": "$double",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "sale_start_time": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "sale_end_time": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "sort_score": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "short_description": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "review_count": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "review_score": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "is_representative": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "item_point_rate": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "item_point_campaign_start": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "item_point_campaign_end": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "is_private": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "merchant_id": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "campaign_type": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "gtin": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$ws"
+                }
+            }
+        },
+        "gran": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$tokenizer": {
+                    "$type": "$ws"
+                }
+            }
+        },
+        "sqip_id": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "unit_code_min": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "unit_code_max": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "unit_amount_min": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "unit_amount_max": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "unit_price_min": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "unit_price_max": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "labels": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$multi_value": true,
+                "$casesensitive": true
+            }
+        },
+        "search_filter_level": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "exact_match": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$multi_value": true,
+                "$casesensitive": true
+            }
+        },
+        "partial_match": {
+            "$type": "$text",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$multi_value": true,
+                "$tokenizer": {
+                    "$type": "$2gram"
+                }
+            }
+        },
+        "attribute_short_ids": {
+            "$type": "$int",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": true,
+                "$multi_value": true,
+                "$useFieldCache": true
+            }
+        },
+        "campaign_ids": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$multi_value": true,
+                "$casesensitive": true
+            }
+        },
+        "short_id": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "ibs_item_point_rate": {
+            "$type": "$long",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "ibs_item_point_campaign_start": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "ibs_item_point_campaign_end": {
+            "$type": "$datetime",
+            "$options": {
+                "$store": true,
+                "$sort": true,
+                "$index": true,
+                "$facet": false,
+                "$useFieldCache": true
+            }
+        },
+        "item_meta_str": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": false,
+                "$index": false,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "campaign_records": {
+            "$type": "$str",
+            "$options": {
+                "$store": true,
+                "$sort": false,
+                "$index": false,
+                "$facet": false,
+                "$casesensitive": true
+            }
+        },
+        "$mappings": {
+            "mapping1": {
+                "$key": {
+                    "$source": "sg_mall_view.item.$key"
+                },
+                "shop_id": {
+                    "$source": "sg_mall_view.item.shop_id"
+                },
+                "item_id": {
+                    "$source": "sg_mall_view.item.item_id"
+                },
+                "item_variant_id": {
+                    "$source": "sg_mall_view.item.item_variant_id"
+                },
+                "update_time": {
+                    "$source": "sg_mall_view.item.update_time"
+                },
+                "base_sku": {
+                    "$source": "sg_mall_view.item.base_sku"
+                },
+                "sku": {
+                    "$source": "sg_mall_view.item.sku"
+                },
+                "skus": {
+                    "$source": "sg_mall_view.item.skus"
+                },
+                "mall_id": {
+                    "$source": "sg_mall_view.item.mall_id"
+                },
+                "shop_url": {
+                    "$source": "sg_mall_view.item.shop_url"
+                },
+                "shop_name": {
+                    "$source": "sg_mall_view.item.shop_name"
+                },
+                "item_name": {
+                    "$source": "sg_mall_view.item.item_name"
+                },
+                "description": {
+                    "$source": "sg_mall_view.item.description"
+                },
+                "tag_line": {
+                    "$source": "sg_mall_view.item.tag_line"
+                },
+                "price_min": {
+                    "$source": "sg_mall_view.item.price_min"
+                },
+                "price_max": {
+                    "$source": "sg_mall_view.item.price_max"
+                },
+                "size": {
+                    "$source": "sg_mall_view.item.size"
+                },
+                "color": {
+                    "$source": "sg_mall_view.item.color"
+                },
+                "variant_names": {
+                    "$source": "sg_mall_view.item.variant_names"
+                },
+                "variant_values": {
+                    "$source": "sg_mall_view.item.variant_values"
+                },
+                "item_image_url1": {
+                    "$source": "sg_mall_view.item.item_image_url1"
+                },
+                "image_description1": {
+                    "$source": "sg_mall_view.item.image_description1"
+                },
+                "item_image_url2": {
+                    "$source": "sg_mall_view.item.item_image_url2"
+                },
+                "image_description2": {
+                    "$source": "sg_mall_view.item.image_description2"
+                },
+                "item_image_url3": {
+                    "$source": "sg_mall_view.item.item_image_url3"
+                },
+                "image_description3": {
+                    "$source": "sg_mall_view.item.image_description3"
+                },
+                "item_image_url4": {
+                    "$source": "sg_mall_view.item.item_image_url4"
+                },
+                "image_description4": {
+                    "$source": "sg_mall_view.item.image_description4"
+                },
+                "item_image_url5": {
+                    "$source": "sg_mall_view.item.item_image_url5"
+                },
+                "image_description5": {
+                    "$source": "sg_mall_view.item.image_description5"
+                },
+                "rakuten_product_category_id1": {
+                    "$source": "sg_mall_view.item.rakuten_product_category_id1"
+                },
+                "rakuten_product_category_id2": {
+                    "$source": "sg_mall_view.item.rakuten_product_category_id2"
+                },
+                "rakuten_product_category_id3": {
+                    "$source": "sg_mall_view.item.rakuten_product_category_id3"
+                },
+                "shop_category_ids": {
+                    "$source": "sg_mall_view.item.shop_category_ids"
+                },
+                "brand": {
+                    "$source": "sg_mall_view.item.brand"
+                },
+                "facet_brand": {
+                    "$source": "sg_mall_view.item.facet_brand"
+                },
+                "brand_id": {
+                    "$source": "sg_mall_view.item.brand_id"
+                },
+                "is_base": {
+                    "$source": "sg_mall_view.item.is_base"
+                },
+                "is_free_shipping": {
+                    "$source": "sg_mall_view.item.is_free_shipping"
+                },
+                "is_inventory_exist": {
+                    "$source": "sg_mall_view.item.is_inventory_exist"
+                },
+                "live_start_time": {
+                    "$source": "sg_mall_view.item.live_start_time"
+                },
+                "live_end_time": {
+                    "$source": "sg_mall_view.item.live_end_time"
+                },
+                "searchable_start_time": {
+                    "$source": "sg_mall_view.item.searchable_start_time"
+                },
+                "searchable_end_time": {
+                    "$source": "sg_mall_view.item.searchable_end_time"
+                },
+                "shop_status": {
+                    "$source": "sg_mall_view.item.shop_status"
+                },
+                "is_test": {
+                    "$source": "sg_mall_view.item.is_test"
+                },
+                "campaign_id": {
+                    "$source": "sg_mall_view.item.campaign_id"
+                },
+                "original_price_max": {
+                    "$source": "sg_mall_view.item.original_price_max"
+                },
+                "original_price_min": {
+                    "$source": "sg_mall_view.item.original_price_min"
+                },
+                "sale_start_time": {
+                    "$source": "sg_mall_view.item.sale_start_time"
+                },
+                "sale_end_time": {
+                    "$source": "sg_mall_view.item.sale_end_time"
+                },
+                "sort_score": {
+                    "$source": "sg_mall_view.item.sort_score"
+                },
+                "short_description": {
+                    "$source": "sg_mall_view.item.short_description"
+                },
+                "review_count": {
+                    "$source": "sg_mall_view.item.review_count"
+                },
+                "review_score": {
+                    "$source": "sg_mall_view.item.review_score"
+                },
+                "is_representative": {
+                    "$source": "sg_mall_view.item.is_representative"
+                },
+                "item_point_rate": {
+                    "$source": "sg_mall_view.item.item_point_rate"
+                },
+                "item_point_campaign_start": {
+                    "$source": "sg_mall_view.item.item_point_campaign_start"
+                },
+                "item_point_campaign_end": {
+                    "$source": "sg_mall_view.item.item_point_campaign_end"
+                },
+                "is_private": {
+                    "$source": "sg_mall_view.item.is_private"
+                },
+                "merchant_id": {
+                    "$source": "sg_mall_view.item.merchant_id"
+                },
+                "campaign_type": {
+                    "$source": "sg_mall_view.item.campaign_type"
+                },
+                "gtin": {
+                    "$source": "sg_mall_view.item.gtin"
+                },
+                "gran": {
+                    "$source": "sg_mall_view.item.gran"
+                },
+                "sqip_id": {
+                    "$source": "sg_mall_view.item.sqip_id"
+                },
+                "unit_code_min": {
+                    "$source": "sg_mall_view.item.unit_code_min"
+                },
+                "unit_code_max": {
+                    "$source": "sg_mall_view.item.unit_code_max"
+                },
+                "unit_amount_min": {
+                    "$source": "sg_mall_view.item.unit_amount_min"
+                },
+                "unit_amount_max": {
+                    "$source": "sg_mall_view.item.unit_amount_max"
+                },
+                "unit_price_min": {
+                    "$source": "sg_mall_view.item.unit_price_min"
+                },
+                "unit_price_max": {
+                    "$source": "sg_mall_view.item.unit_price_max"
+                },
+                "labels": {
+                    "$source": "sg_mall_view.item.labels"
+                },
+                "search_filter_level": {
+                    "$source": "sg_mall_view.item.search_filter_level"
+                },
+                "exact_match": {
+                    "$source": "sg_mall_view.item.exact_match"
+                },
+                "partial_match": {
+                    "$source": "sg_mall_view.item.partial_match"
+                },
+                "attribute_short_ids": {
+                    "$source": "sg_mall_view.item.attribute_short_ids"
+                },
+                "campaign_ids": {
+                    "$source": "sg_mall_view.item.campaign_ids"
+                },
+                "short_id": {
+                    "$source": "sg_mall_view.item.short_id"
+                },
+                "ibs_item_point_rate": {
+                    "$source": "sg_mall_view.item.ibs_item_point_rate"
+                },
+                "ibs_item_point_campaign_start": {
+                    "$source": "sg_mall_view.item.ibs_item_point_campaign_start"
+                },
+                "ibs_item_point_campaign_end": {
+                    "$source": "sg_mall_view.item.ibs_item_point_campaign_end"
+                },
+                "_doc_boost": {
+                    "$source": "sg_mall_view.item.gsp_doc_boost"
+                },
+                "_query_boost_terms": {
+                    "$source": "sg_mall_view.item.gsp_query_boost_terms"
+                },
+                "_category_boost": {
+                    "$source": "sg_mall_view.item.gsp_category_boost"
+                },
+                "item_meta_str": {
+                    "$source": "sg_mall_view.item.item_meta_str"
+                },
+                "campaign_records": {
+                    "$source": "sg_mall_view.item.campaign_records"
+                }
+            }
+        }
+    }
+}

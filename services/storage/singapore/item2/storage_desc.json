@@ -1,0 +1,12 @@
+{
+  "$type" : "storage",
+   "service" : "singapore", //service name has to be unique system wide
+   "collection" : "item2",
+   "config" :
+   {
+     "storageCluster":"cassandra_cluster1",
+     "replayLogCluster":"cassandra_cluster1",
+     "canGetCollection":true // this should only be true for synonym collections
+   }
+}
+

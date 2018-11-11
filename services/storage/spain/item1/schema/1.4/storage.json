@@ -1,0 +1,231 @@
+{
+  "$type": "$storage",
+  "$name": "item1",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "shop_id": {
+      "$type": "$str"
+    },
+    "item_id": {
+      "$type": "$str"
+    },
+    "item_variant_id": {
+      "$type": "$str"
+    },
+    "update_time": {
+      "$type": "$datetime"
+    },
+    "base_sku": {
+      "$type": "$str"
+    },
+    "sku": {
+      "$type": "$str"
+    },
+    "skus": {
+      "$type": "$text"
+    },
+    "country_code": {
+      "$type": "$str"
+    },
+    "mall_id": {
+      "$type": "$str"
+    },
+    "shop_url": {
+      "$type": "$str"
+    },
+    "shop_name": {
+      "$type": "$text"
+    },
+    "item_name": {
+      "$type": "$text"
+    },
+    "description": {
+      "$type": "$text"
+    },
+    "tag_line": {
+      "$type": "$text"
+    },
+    "price_min": {
+      "$type": "$double"
+    },
+    "price_max": {
+      "$type": "$double"
+    },
+    "size": {
+      "$type": "$str"
+    },
+    "color": {
+      "$type": "$str"
+    },
+    "variant_names": {
+      "$type": "$text"
+    },
+    "variant_values": {
+      "$type": "$text"
+    },
+    "item_image_url1": {
+      "$type": "$str"
+    },
+    "image_description1": {
+      "$type": "$text"
+    },
+    "item_image_url2": {
+      "$type": "$str"
+    },
+    "image_description2": {
+      "$type": "$text"
+    },
+    "item_image_url3": {
+      "$type": "$str"
+    },
+    "image_description3": {
+      "$type": "$text"
+    },
+    "item_image_url4": {
+      "$type": "$str"
+    },
+    "image_description4": {
+      "$type": "$text"
+    },
+    "item_image_url5": {
+      "$type": "$str"
+    },
+    "image_description5": {
+      "$type": "$text"
+    },
+    "rakuten_product_category_id1": {
+      "$type": "$int"
+    },
+    "rakuten_product_category_id2": {
+      "$type": "$int"
+    },
+    "rakuten_product_category_id3": {
+      "$type": "$int"
+    },
+    "shop_category_ids": {
+      "$type": "$text"
+    },
+    "brand": {
+      "$type": "$text"
+    },
+    "facet_brand": {
+      "$type": "$str"
+    },
+    "brand_id": {
+      "$type": "$int"
+    },
+    "is_base": {
+      "$type": "$int"
+    },
+    "is_free_shipping": {
+      "$type": "$int"
+    },
+    "is_inventory_exist": {
+      "$type": "$int"
+    },
+    "live_start_time": {
+      "$type": "$datetime"
+    },
+    "live_end_time": {
+      "$type": "$datetime"
+    },
+    "searchable_start_time": {
+      "$type": "$datetime"
+    },
+    "searchable_end_time": {
+      "$type": "$datetime"
+    },
+    "shop_status": {
+      "$type": "$int"
+    },
+    "is_test": {
+      "$type": "$int"
+    },
+    "campaign_id": {
+      "$type": "$str"
+    },
+    "original_price_max": {
+      "$type": "$double"
+    },
+    "original_price_min": {
+      "$type": "$double"
+    },
+    "sale_start_time": {
+      "$type": "$datetime"
+    },
+    "sale_end_time": {
+      "$type": "$datetime"
+    },
+    "sort_score": {
+      "$type": "$long"
+    },
+    "short_description": {
+      "$type": "$str"
+    },
+    "review_count": {
+      "$type": "$long"
+    },
+    "review_score": {
+      "$type": "$long"
+    },
+    "is_representative": {
+      "$type": "$int"
+    },
+    "item_point_rate": {
+      "$type": "$long"
+    },
+    "item_point_campaign_start": {
+      "$type": "$datetime"
+    },
+    "item_point_campaign_end": {
+      "$type": "$datetime"
+    },
+    "is_private": {
+      "$type": "$int"
+    },
+    "merchant_id": {
+      "$type": "$str"
+    },
+    "campaign_type": {
+      "$type": "$int"
+    },
+    "gtin": {
+      "$type": "$text"
+    },
+    "gran": {
+      "$type": "$text"
+    },
+    "sqip_id": {
+      "$type": "$str"
+    },
+    "unit_code_min": {
+      "$type": "$str"
+    },
+    "unit_code_max": {
+      "$type": "$str"
+    },
+    "unit_amount_min": {
+      "$type": "$long"
+    },
+    "unit_amount_max": {
+      "$type": "$long"
+    },
+    "unit_price_min": {
+      "$type": "$long"
+    },
+    "unit_price_max": {
+      "$type": "$long"
+    },
+    "labels": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "search_filter_level": {
+      "$type": "$int"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$type": "$storage",
+  "$name": "item1_boost",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "gsp_query_boost_terms": {
+      "$type": "$bytearray"
+    },
+    "gsp_doc_boost": {
+      "$type": "$double"
+    }
+  }
+}

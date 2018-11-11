@@ -1,0 +1,42 @@
+{
+  "$type" : "search",
+  "service" : "singapore_search",
+  "index" : "item1",
+  "config" :
+    {
+      "maxEventsInQueue":"1000",
+      "shardingClass":"HashedShardPolicy",
+      "replicationBehaviour":"replica.fail_on_any_error",
+      "hadoopClusterName":"hadoop_cluster",
+      "jobStoreClusterName":"cassandra_cluster1",
+      "queueCluster":"cassandra_cluster1"
+    },
+  "clusters":
+    {
+      "cluster1":
+        {
+          "indexer" :
+            [
+              {"instanceId":"1", "version" : "2.3.3", "node":"stg-agspqu601zd"}
+            ],
+          "solr" :
+            [
+              {"shardId":"node_topshard", "instanceId":"1", "solrPort":"10003", "version" : "2.3.3", "node":"stg-agspix602zd"},
+              {"shardId":"node_shard001", "instanceId":"1", "solrPort":"10005", "version" : "2.3.3", "node":"stg-agspix602zd"}
+           ],
+          "searchapi":
+            [
+              {"instanceId":"1", "version" : "2.3.3", "node":"stg-agspapi601zd", "httpPort":"8332", "shutdownPort":"18255", "connectorPort":"18259"}
+            ]
+        }
+    },
+  "clusterconfigs" :
+    {
+      "cluster1":
+        {
+          "path":"/home/ngsuser/var/lib/rsb/admincli-config/singapore_search-item1_config",
+          "noOfShards":"1",
+          "replFactor":"1"
+        }
+    }
+}

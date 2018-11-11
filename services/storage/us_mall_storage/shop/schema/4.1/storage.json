@@ -1,0 +1,83 @@
+{
+  "$type": "$storage",
+  "$name": "shop",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "time_frames": {
+      "$type": "$nested",
+      "$fields": {
+        "excluded_category_ids": {
+          "$type": "$str",
+          "$options": {
+            "$multi_value": true
+          }
+        },
+        "excluded_item_ids": {
+          "$type": "$str",
+          "$options": {
+            "$multi_value": true
+          }
+        },
+        "frame_campaign_ids": {
+          "$type": "$str",
+          "$options": {
+            "$multi_value": true
+          }
+        },
+        "frame_campaign_types": {
+          "$type": "$int",
+          "$options": {
+            "$multi_value": true
+          }
+        },
+        "frame_end_time": {
+          "$type": "$datetime"
+        },
+        "frame_is_private": {
+          "$type": "$int"
+        },
+        "frame_priority": {
+          "$type": "$int"
+        },
+        "frame_start_time": {
+          "$type": "$datetime"
+        },
+        "included_category_ids": {
+          "$type": "$str",
+          "$options": {
+            "$multi_value": true
+          }
+        },
+        "price_modifier": {
+          "$type": "$str"
+        }
+      }
+    },
+    "shop_name": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "is_test": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "shop_url": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "shop_status": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "shop_created_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "shop_modified_time": {
+      "$type": "$datetime",
+      "$options": {}
+    }
+  }
+}

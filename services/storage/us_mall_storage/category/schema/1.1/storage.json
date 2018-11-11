@@ -1,0 +1,23 @@
+{
+  "$type": "$storage",
+  "$name": "category",
+  "$fields": {
+    "$key": {
+      "$type": "$int"
+    },
+    "category_name": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "category_path_names": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "category_seo_url": {
+      "$type": "$text",
+      "$options": {}
+    }
+  }
+}

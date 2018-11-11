@@ -1,0 +1,17 @@
+{
+  "$type" : "storage",
+   "service" : "spain_ichiba", //service name has to be unique system wide
+   "collection" : "item1",
+   "config" :
+   {
+     "storageCluster":"cassandra_eu_prod_c001",
+     "replayLogCluster":"cassandra_eu_prod_c001",
+     "canGetCollection":true // this should only be true for synonym collections
+   },
+   "gateway" :
+    [
+      {"instanceId":"1", "node":"agspfdapi101z", "version" : "2.3.4", "port" : "6060"},
+      {"instanceId":"2", "node":"agspfdapi102z", "version" : "2.3.4", "port" : "6060"}
+    ]
+}
+

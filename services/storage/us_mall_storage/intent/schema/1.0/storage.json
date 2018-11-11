@@ -1,0 +1,15 @@
+{
+  "$type": "$storage",
+  "$name": "intent",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "category": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    }
+  }
+}

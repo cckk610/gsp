@@ -1,0 +1,103 @@
+
+{
+  "$type" : "search",
+  "service" : "spain_ichiba_search",
+  "index" : "item1",
+  "config" :
+    {
+      "maxEventsInQueue":"500000",
+      "shardingClass":"HashedShardPolicy",
+      "replicationBehaviour":"replica.fail_on_any_error",
+      "hadoopClusterName":"hd_eu_prod_001",
+      "jobStoreClusterName":"cs_eu_prod_001",
+      "queueCluster":"cs_eu_prod_001"
+    },
+  "clusters":
+    {
+      "cluster1":
+        {
+          "indexer":
+            [
+              {"instanceId":"1", "version" : "2.3.4", "node":"agspidx101z"},
+              {"instanceId":"2", "version" : "2.3.4", "node":"agspidx201z"}
+            ],
+          "solr":
+            [
+              {"shardId":"node_topshard", "instanceId":"1", "solrPort":"9703", "version" : "2.3.4", "node":"agsps101z",
+        	"cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+},
+              {"shardId":"node_shard001", "instanceId":"1", "solrPort":"9705", "version" : "2.3.4", "node":"agsps101z",
+		"cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+}
+            ],
+          "searchapi":
+            [
+              {"instanceId":"1", "version" : "2.3.4", "node":"agspapi101z", "httpPort":"8292", "shutdownPort":"18215", "connectorPort":"18219"}
+            ]
+        },
+       "cluster2":
+        {
+          "indexer":
+            [
+              {"instanceId":"1", "version" : "2.3.4", "node":"agspidx201z"},
+              {"instanceId":"2", "version" : "2.3.4", "node":"agspidx301z"}
+            ],
+          "solr":
+            [
+              {"shardId":"node_topshard", "instanceId":"1", "solrPort":"9703", "version" : "2.3.4", "node":"agsps201z",
+                "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              },
+              {"shardId":"node_shard001", "instanceId":"1", "solrPort":"9705", "version" : "2.3.4", "node":"agsps201z",
+                "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              }
+            ],
+          "searchapi":
+            [
+              {"instanceId":"1", "version" : "2.3.4", "node":"agspapi201z", "httpPort":"8292", "shutdownPort":"18215", "connectorPort":"18219"}
+            ]
+        },
+       "cluster3":
+        {
+          "indexer":
+            [
+              {"instanceId":"1", "version" : "2.3.4", "node":"agspidx301z"},
+              {"instanceId":"2", "version" : "2.3.4", "node":"agspidx101z"}
+            ],
+          "solr":
+            [
+              {"shardId":"node_topshard", "instanceId":"1", "solrPort":"9703", "version" : "2.3.4", "node":"agsps301z",
+                "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              },
+              {
+               "shardId":"node_shard001", "instanceId":"1", "solrPort":"9705", "version" : "2.3.4", "node":"agsps301z",
+               "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              }
+            ],
+          "searchapi":
+            [
+              {"instanceId":"1", "version" : "2.3.4", "node":"agspapi301z", "httpPort":"8292", "shutdownPort":"18215", "connectorPort":"18219"}
+            ]
+        }
+    },
+  "clusterconfigs" :
+    {
+      "cluster1":
+        {
+          "path":"/home/ngsuser/var/lib/rsb/admincli-config/spain_ichiba_search-item1_config",
+          "noOfShards":"1",
+          "replFactor":"1"
+        },
+      "cluster2":
+        {
+          "path":"/home/ngsuser/var/lib/rsb/admincli-config/spain_ichiba_search-item1_config",
+          "noOfShards":"1",
+          "replFactor":"1"
+        },
+      "cluster3":
+        {
+          "path":"/home/ngsuser/var/lib/rsb/admincli-config/spain_ichiba_search-item1_config",
+          "noOfShards":"1",
+          "replFactor":"1"
+        }
+    }
+}

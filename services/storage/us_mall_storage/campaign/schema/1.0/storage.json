@@ -1,0 +1,91 @@
+{
+  "$type": "$storage",
+  "$name": "campaign",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "description": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "start_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "end_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "type": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "target": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "is_private": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "discount_type": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "discount_value": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "coupon_code": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "mobile_only": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "member_ranks": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "minimum_quantity": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "minimum_purchase": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "maximum_discount": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "update_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "etag": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "scope_groups": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "merchant_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "shop_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "meta_str": {
+      "$type": "$str",
+      "$options": {}
+    }
+  }
+}

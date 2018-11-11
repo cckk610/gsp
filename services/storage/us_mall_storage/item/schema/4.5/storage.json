@@ -1,0 +1,426 @@
+{
+  "$type": "$storage",
+  "$name": "item",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "shop_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "item_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "update_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "base_sku": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "skus": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "mall_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "shop_url": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "shop_name": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "item_name": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "description": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "tag_line": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "price_min": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "price_max": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "variant_names": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "variant_values": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "item_image_url1": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "image_description1": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "item_image_url2": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "image_description2": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "item_image_url3": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "image_description3": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "item_image_url4": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "image_description4": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "item_image_url5": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "image_description5": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "rakuten_product_category_id1": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "rakuten_product_category_id2": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "rakuten_product_category_id3": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "shop_category_ids": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "brand": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "brand_id": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "is_base": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "is_free_shipping": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "is_inventory_exist": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "live_start_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "live_end_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "searchable_start_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "searchable_end_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "shop_status": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "is_test": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "original_price_max": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "original_price_min": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "sort_score": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "short_description": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "review_count": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "review_score": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "is_representative": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "merchant_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "campaign_type": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "gtin": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "gran": {
+      "$type": "$text",
+      "$options": {}
+    },
+    "sqip_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "labels": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "search_filter_level": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "exact_match": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "partial_match": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "campaign_ids": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "item_point_rate": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "item_point_campaign_start": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "item_point_campaign_end": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "ibs_item_point_rate": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "ibs_item_point_campaign_start": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "ibs_item_point_campaign_end": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "item_meta_str": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "original_unit_price_min": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "original_unit_price_max": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "unit_code_min": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "unit_code_max": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "unit_amount_min": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "unit_amount_max": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "unit_price_min": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "unit_price_max": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "size": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "color": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "short_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "item_variant_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "attribute_short_ids": {
+      "$type": "$int",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "facet_brand": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "time_frames": {
+      "$type": "$nested",
+      "$fields": {
+        "frame_price_min": {
+          "$type": "$long"
+        },
+        "frame_price_max": {
+          "$type": "$long"
+        },
+        "frame_start_time": {
+          "$type": "$datetime"
+        },
+        "frame_end_time": {
+          "$type": "$datetime"
+        },
+        "frame_campaign_ids": {
+          "$type": "$str",
+          "$options": {
+            "$multi_value": true
+          }
+        },
+        "frame_campaign_types": {
+          "$type": "$int",
+          "$options": {
+            "$multi_value": true
+          }
+        },
+        "frame_is_private": {
+          "$type": "$int"
+        },
+        "frame_priority": {
+          "$type": "$int"
+        },
+        "frame_unit_price_min": {
+          "$type": "$long"
+        },
+        "frame_unit_price_max": {
+          "$type": "$long"
+        },
+        "frame_unit_price": {
+          "$type": "$long"
+        },
+        "frame_item_point_rate": {
+          "$type": "$long"
+        }
+      }
+    },
+    "sku": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "create_time": {
+      "$type": "$datetime",
+      "$options": {}
+    },
+    "item_condition": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "rakuten_product_category_id4": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "rakuten_product_category_id5": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "rakuten_product_category_id6": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "rakuten_product_category_id7": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "rakuten_product_category_id8": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "variant_meta_str": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "manufacturer": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "category_id": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "is_inventory_low": {
+      "$type": "$int",
+      "$options": {}
+    }
+  }
+}

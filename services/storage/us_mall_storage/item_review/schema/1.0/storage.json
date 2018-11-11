@@ -1,0 +1,29 @@
+{
+  "$type": "$storage",
+  "$name": "item_review",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "num_reviews":{
+      "$type": "$int",
+      "$options": {}
+    },
+    "average_rating":{
+      "$type": "$float",
+      "$options": {}
+    },
+    "shared_reviews":{
+      "$type": "$int",
+      "$options": {}
+    },
+    "displayed_reviews":{
+      "$type": "$int",
+      "$options": {}
+    },
+    "displayed_rating":{
+      "$type": "$float",
+      "$options": {}
+    }
+  }
+}

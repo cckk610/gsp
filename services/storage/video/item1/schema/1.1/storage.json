@@ -1,0 +1,210 @@
+{
+  "$type": "$storage",
+  "$name": "item1",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "type": {
+      "$type": "$int"
+    },
+    "isp_ids": {
+      "$type": "$int",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "rating_type": {
+      "$type": "$int"
+    },
+    "supported_device_ids": {
+      "$type": "$int",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "supported_devices_facet": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "genre_id": {
+      "$type": "$int"
+    },
+    "genre_facet": {
+      "$type": "$str"
+    },
+    "sub_genre_id": {
+      "$type": "$int"
+    },
+    "sub_genre_facet": {
+      "$type": "$str"
+    },
+    "tag_ids": {
+      "$type": "$int",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "tag_names": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "tag_name_kanas": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "tags_facet": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "service_id": {
+      "$type": "$int"
+    },
+    "service_facet": {
+      "$type": "$str"
+    },
+    "maker_id": {
+      "$type": "$int"
+    },
+    "maker_facet": {
+      "$type": "$str"
+    },
+    "label_id": {
+      "$type": "$int"
+    },
+    "label_facet": {
+      "$type": "$str"
+    },
+    "content_name": {
+      "$type": "$text"
+    },
+    "content_name_original": {
+      "$type": "$text"
+    },
+    "content_name_kana": {
+      "$type": "$text"
+    },
+    "keyword": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "comment_short": {
+      "$type": "$text"
+    },
+    "show_started_at": {
+      "$type": "$datetime"
+    },
+    "show_ended_at": {
+      "$type": "$datetime"
+    },
+    "staff_cast_ids": {
+      "$type": "$int",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "staff_cast_names": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "staff_cast_name_kanas": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "staff_casts_facet": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "display_cast": {
+      "$type": "$str"
+    },
+    "svod_content_names": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "svod_content_name_kanas": {
+      "$type": "$text",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "svod_content_ids": {
+      "$type": "$int",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "svod_contents_facet": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "copyright": {
+      "$type": "$str"
+    },
+    "point_ave": {
+      "$type": "$int"
+    },
+    "daily_popularity": {
+      "$type": "$int"
+    },
+    "monthly_popularity": {
+      "$type": "$int"
+    },
+    "biannually_popularity": {
+      "$type": "$int"
+    },
+    "a_pr_icons": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "b_pr_icons": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "c_pr_icons": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "a_min_price": {
+      "$type": "$int"
+    },
+    "b_min_price": {
+      "$type": "$int"
+    },
+    "c_min_price": {
+      "$type": "$int"
+    },
+    "search_disp_flag": {
+      "$type": "$bool"
+    },
+    "ranking_disp_flag": {
+      "$type": "$bool"
+    }
+  }
+}

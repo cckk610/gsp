@@ -1,0 +1,94 @@
+{
+  "$type": "$storage",
+  "$name": "rcp_product",
+  "$fields": {
+    "$key": {
+      "$type": "$long"
+    },
+    "rcp_product_id": {
+      "$type": "$long"
+    },
+    "gran": {
+      "$type": "$long",
+      "$options": {}
+    },
+    "product_status": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "variant_type": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "product_name": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "images": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "description": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "rcp_category_id": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "client_category_id": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "client_category_node_name": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "client_category_path": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "identifiers": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "attributes": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "item_references": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "rcp_corporate_brand_id": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "corporate_brand_name": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "brands": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "relationships": {
+      "$type": "$str",
+      "$options": {}
+    },
+    "variant_axes": {
+      "$options": {
+        "$multi_value": true
+      },
+      "$type": "$int"
+    },
+    "deleted": {
+      "$type": "$bool",
+      "$options": {}
+    },
+    "data_timestamp": {
+      "$type": "$long",
+      "$options": {}
+    }
+  }
+}

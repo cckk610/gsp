@@ -1,0 +1,101 @@
+{
+  "$type" : "search",
+  "service" : "singapore_search",
+  "index" : "item2",
+  "config" :
+    {
+      "maxEventsInQueue":"500000",
+      "shardingClass":"HashedShardPolicy",
+      "replicationBehaviour":"replica.fail_on_any_error",
+      "hadoopClusterName":"hadoop_c003",
+      "jobStoreClusterName":"cassandra_cluster1",
+      "queueCluster":"cassandra_cluster1"
+    },
+  "clusters":
+    {
+      "cluster1":
+        {
+          "indexer":
+            [
+              {"instanceId":"1", "version" : "2.3.3", "node":"agsppx001002d"},
+              {"instanceId":"2", "version" : "2.3.3", "node":"agsppx001003d"}
+            ],
+          "solr":
+            [
+              {"shardId":"node_topshard", "instanceId":"1", "solrPort":"10013", "version" : "2.3.3", "node":"agspix001015d",
+               "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              },
+              {"shardId":"node_shard001", "instanceId":"1", "solrPort":"10015", "version" : "2.3.3", "node":"agspix001015d",
+               "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              }
+            ],
+          "searchapi":
+            [
+              {"instanceId":"1", "version" : "2.3.3", "node":"agspapi001001d", "httpPort":"8362", "shutdownPort":"18285", "connectorPort":"18289"}
+            ]
+        },
+       "cluster2":
+        {
+          "indexer":
+            [
+              {"instanceId":"1", "version" : "2.3.3", "node":"agsppx001002d"},
+              {"instanceId":"2", "version" : "2.3.3", "node":"agsppx001003d"}
+            ],
+          "solr":
+            [
+              {"shardId":"node_topshard", "instanceId":"1", "solrPort":"10013", "version" : "2.3.3", "node":"agspix002015d",
+               "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              },
+              {"shardId":"node_shard001", "instanceId":"1", "solrPort":"10015", "version" : "2.3.3", "node":"agspix002015d",
+               "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              }
+            ],
+          "searchapi":
+            [
+              {"instanceId":"1", "version" : "2.3.3", "node":"agspapi002001d", "httpPort":"8362", "shutdownPort":"18285", "connectorPort":"18289"}
+            ]
+        },
+        "cluster3":
+        {
+          "indexer":
+            [
+              {"instanceId":"1", "version" : "2.3.3", "node":"agsppx001002d"},
+              {"instanceId":"2", "version" : "2.3.3", "node":"agsppx001003d"}
+            ],
+          "solr":
+            [
+              {"shardId":"node_topshard", "instanceId":"1", "solrPort":"10013", "version" : "2.3.3", "node":"agspix003015d",
+               "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              },
+              {"shardId":"node_shard001", "instanceId":"1", "solrPort":"10015", "version" : "2.3.3", "node":"agspix003015d",
+               "cacheParams" : "-Dsolr.cache.filtercache.size=512 -Dsolr.cache.filtercache.initialsize=256 -Dsolr.cache.filtercache.autowarmcount=64 -Dsolr.cache.queryresultcache.size=20480 -Dsolr.cache.queryresultcache.initialsize=10240 -Dsolr.cache.queryresultcache.autowarmcount=2048 -Dsolr.cache.documentcache.size=20480 -Dsolr.cache.documentcache.initialsize=10240 -Dsolr.cache.documentcache.autowarmcount=2048"
+              }
+            ],
+          "searchapi":
+            [
+              {"instanceId":"1", "version" : "2.3.3", "node":"agspapi003001d", "httpPort":"8362", "shutdownPort":"18285", "connectorPort":"18289"}
+            ]
+        }
+    },
+  "clusterconfigs" :
+    {
+      "cluster1":
+        {
+          "path":"/home/ngsuser/var/lib/rsb/admincli-config/singapore_search-item2_config",
+          "noOfShards":"1",
+          "replFactor":"1"
+        },
+      "cluster2":
+        {
+          "path":"/home/ngsuser/var/lib/rsb/admincli-config/singapore_search-item2_config",
+          "noOfShards":"1",
+          "replFactor":"1"
+        },
+       "cluster3":
+        {
+          "path":"/home/ngsuser/var/lib/rsb/admincli-config/singapore_search-item2_config",
+          "noOfShards":"1",
+          "replFactor":"1"
+        }
+    }
+}

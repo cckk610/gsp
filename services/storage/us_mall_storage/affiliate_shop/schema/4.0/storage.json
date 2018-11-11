@@ -1,0 +1,17 @@
+{
+  "$type": "$storage",
+  "$name": "affiliate_shop",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "afl_shop_rate": {
+      "$type": "$int",
+      "$options": {}
+    },
+    "is_afl_shop_disabled": {
+      "$type": "$bool",
+      "$options": {}
+    }
+  }
+}

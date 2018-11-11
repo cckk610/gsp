@@ -1,0 +1,12 @@
+{
+    "$type": "$storage",
+    "$name": "item_ctg",
+    "$fields": {
+        "$key": {
+            "$type": "$str"
+        },
+        "gsp_category_boost": {
+            "$type": "$double"
+        }
+    }
+}

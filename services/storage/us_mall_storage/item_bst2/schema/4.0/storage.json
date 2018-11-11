@@ -1,0 +1,21 @@
+{
+  "$type": "$storage",
+  "$name": "item_bst2",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "gsp_query_boost_terms": {
+      "$type": "$bytearray",
+      "$options": {}
+    },
+    "gsp_doc_boost": {
+      "$type": "$double",
+      "$options": {}
+    },
+    "gsp_category_boost": {
+      "$type": "$double",
+      "$options": {}
+    }
+  }
+}

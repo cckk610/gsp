@@ -1,0 +1,13 @@
+{
+  "$type": "$storage",
+  "$name": "synonym_multi",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "range": {
+      "$type": "$str",
+      "$options": {}
+    }
+  }
+}

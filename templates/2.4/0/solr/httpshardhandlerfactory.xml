@@ -1,0 +1,18 @@
+<!--
+    Configurable parameters for connection pool used in HttpShardhandlerFactory class.
+    This has to be included RequestHandlers in solrconfig.xml
+ -->
+
+<!-- settings for connection pool -->
+<shardHandlerFactory class="HttpShardHandlerFactory">
+    <int name="socketTimeout">${solr.httpshardhandler.sockettimeout:0}</int>
+    <int name="connTimeout">${solr.httpshardhandler.conntimeout:0}</int>
+    <int name="maxConnectionsPerHost">${solr.httpshardhandler.maxconnectionsperhost:100}</int>
+    <int name="corePoolSize">${solr.httpshardhandler.corepoolsize:100}</int>
+    <int name="maximumPoolSize">${solr.httpshardhandler.maximumpoolsize:100}</int>
+    <int name="sizeOfQueue">${solr.httpshardhandler.sizeofqueue:20000}</int>
+    <bool name="fairnessPolicy">${solr.httpshardhandler.fairnesspolicy:false}</bool>
+    <bool name="staleConnectionCheck">${solr.httpshardhandler.staleconnectioncheck:true}</bool>
+    <bool name="tcpNoDelay">${solr.httpshardhandler.tcpNoDelay:true}</bool>
+</shardHandlerFactory>
+

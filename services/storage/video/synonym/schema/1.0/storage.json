@@ -1,0 +1,24 @@
+{
+  "$type": "$storage",
+  "$name": "synonym",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "domain": {
+      "$type": "$text"
+    },
+    "range": {
+      "$type": "$text"
+    },
+    "query_synonym": {
+      "$type": "$bool"
+    },
+    "didyoumean": {
+      "$type": "$bool"
+    },
+    "related": {
+      "$type": "$bool"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$type": "$storage",
+  "$name": "campaign_scope",
+  "$fields": {
+    "$key": {
+      "$type": "$str"
+    },
+    "target_shop_ids": {
+      "$type": "$str",
+      "$options": {
+        "$multi_value": true
+      }
+    },
+    "target_item_ids": {
+      "$type": "$str",
+      "$options": {
+      }
+    },
+    "excluded_item_ids": {
+      "$type": "$str",
+      "$options": {
+      }
+    }
+  }
+}
